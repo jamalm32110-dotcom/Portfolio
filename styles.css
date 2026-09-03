@@ -13,7 +13,8 @@ body {
 }
 
 body {
-  overflow: hidden;
+  overflow-x: hidden;
+  overflow-y: auto;
   background: #f7d49b;
   color: #17324d;
   font-family: "Courier New", Courier, monospace;
@@ -168,6 +169,7 @@ body {
   max-width: calc(100% - 36px);
   transform: translate(-50%, -50%);
   animation: about-appear 900ms 180ms ease-out both;
+  
 }
 
 .more-about-me > div {
@@ -219,12 +221,6 @@ body {
   .more-about-me {
     max-width: calc(100% - 24px);
   }
-
-}
-
-body {
-  overflow-x: hidden;
-  overflow-y: auto;
 }
 
 .section-menu {
@@ -347,4 +343,47 @@ body {
     padding: 8px 9px;
     font-size: 0.65rem;
   }
+}
+
+@media (max-width: 600px) {
+  .section-menu {
+    right: 10px;
+    gap: 5px;
+  }
+
+  .section-button {
+    gap: 4px;
+    padding: 7px;
+    font-size: 0.58rem;
+  }
+
+  .section-icon {
+    font-size: 0.85rem;
+  }
+
+  .more-about-me {
+    top: 54%;
+    width: calc(100% - 24px);
+    max-width: none;
+  }
+
+  .more-about-me > div {
+    font-size: clamp(1.8rem, 10vw, 3rem);
+  }
+
+  .more-about-me h3 {
+    margin: 10px 0 0;
+    font-size: 0.78rem;
+    line-height: 1.35;
+    text-align: center;
+  }
+
+  .name {
+    font-size: clamp(2.8rem, 14vw, 5rem);
+  }
+}
+
+/* Temporary layout debugging */
+div {
+  outline: 1px solid red;
 }
