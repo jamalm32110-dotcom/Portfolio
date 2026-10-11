@@ -339,6 +339,46 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 360px;
+  transition: transform 200ms ease, box-shadow 200ms ease;
+}
+
+.article-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 9px 9px 0 #17324d;
+}
+
+.article-card-with-viewer {
+  position: relative;
+}
+
+.article-summary {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.article-viewer-wrap {
+  display: none;
+  position: absolute;
+  inset: 54px 20px 20px;
+  border: 3px solid #17324d;
+  background: #fff;
+  box-shadow: 0 0 0 3px rgba(255,245,214,0.6);
+}
+
+.article-viewer-wrap iframe {
+  width: 100%;
+  height: 100%;
+  border: 0;
+  background: #fff;
+}
+
+#article-one:checked + .article-card-with-viewer .article-summary {
+  display: none;
+}
+
+#article-one:checked + .article-card-with-viewer .article-viewer-wrap {
+  display: block;
 }
 
 .article-tag {
@@ -363,10 +403,65 @@ body {
   text-decoration: none;
 }
 
-.article-pdf-preview {
-  min-height: 200px;
-  border: 2px solid #d85d62;
-  background: linear-gradient(135deg, rgba(216, 93, 98, 0.12), rgba(255, 245, 214, 0.9));
+.article-text-preview {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 8px;
+  height: 220px;
+  min-height: 220px;
+  padding: 66px 24px 18px;
+  text-align: left;
+  overflow: hidden;
+}
+
+.writing-preview {
+  background: linear-gradient(140deg, #fff0d2, #f6c7ad);
+}
+
+.ai-preview {
+  background: linear-gradient(140deg, #f9d7e5, #f5bba9 55%, #ffe9c4);
+}
+
+.ideas-preview {
+  background: linear-gradient(140deg, #e5e6ff, #c9d9f4);
+}
+
+.preview-label {
+  display: inline-block;
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  z-index: 1;
+  padding: 6px 10px;
+  background: #17324d;
+  color: #fff5d6;
+  font-size: 0.62rem;
+  font-weight: 900;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.article-text-preview strong {
+  position: relative;
+  z-index: 1;
+  display: block;
+  max-width: 22ch;
+  color: #17324d;
+  font-size: clamp(1.05rem, 1.7vw, 1.45rem);
+  line-height: 1.08;
+  text-transform: uppercase;
+}
+
+.preview-lines {
+  display: block;
+  width: 66%;
+  height: 24px;
+  border-top: 2px solid rgba(23, 50, 77, 0.22);
+  border-bottom: 2px solid rgba(23, 50, 77, 0.22);
+  opacity: 0.75;
 }
 
 .article-meta {
