@@ -34,13 +34,17 @@
     </div>
   </main>
   <div class="section-menu" aria-label="Page sections">
-    <a href="#projects" class="section-button">
-      <span class="section-icon">▦</span>
-      <span>Projects</span>
+    <a href="#articles" class="section-button">
+      <span class="section-icon">✎</span>
+      <span>Articles</span>
     </a>
     <a href="#certificates" class="section-button">
       <span class="section-icon">✦</span>
       <span>Certificates</span>
+    </a>
+    <a href="#projects" class="section-button">
+      <span class="section-icon">▦</span>
+      <span>Projects</span>
     </a>
   </div>
 
@@ -48,31 +52,36 @@
   <label class="close-button" for="portfolio-close" aria-label="Close enlarged image">X</label>
 
   <div class="portfolio-sections">
-    <div class="portfolio-section" id="projects">
-      <div class="section-heading">Projects</div>
-      <div class="portfolio-grid">
-        <input class="card-toggle" type="radio" name="portfolio-card" id="project-one">
-        <label class="portfolio-card" for="project-one">
-          <div class="card-image"></div>
-          <div class="card-title">Project Name</div>
-          <div class="card-text"></div>
-        </label>
-        <input class="card-toggle" type="radio" name="portfolio-card" id="project-two">
-        <label class="portfolio-card" for="project-two">
-          <div class="card-image"></div>
-          <div class="card-title">Project Name</div>
-          <div class="card-text"></div>
-        </label>
-        <input class="card-toggle" type="radio" name="portfolio-card" id="project-three">
-        <label class="portfolio-card" for="project-three">
-          <div class="card-image"></div>
-          <div class="card-title">Project Name</div>
-          <div class="card-text"></div>
-        </label>
+    <div class="portfolio-section article-section" id="articles">
+      <div class="section-heading">Articles</div>
+      <div class="portfolio-grid articles-grid">
+        <article class="portfolio-card article-card">
+          <div class="card-image article-preview">Article</div>
+          <div class="article-tag">Learning</div>
+          <div class="card-title">AI AS YOUR COPILOT TO SUCCESS</div>
+          <div class="card-text">A reflection on how artificial intelegence should not replace human creativity.</div>
+          <div class="article-meta">4 min read</div>
+        </article>
+
+        <article class="portfolio-card article-card">
+          <div class="card-image article-preview">Writing</div>
+          <div class="article-tag">Mindset</div>
+          <div class="card-title">How I Approach Difficult Problems</div>
+          <div class="card-text">Breaking big challenges into smaller steps is often the difference between feeling stuck and making progress.</div>
+          <div class="article-meta">5 min read</div>
+        </article>
+
+        <article class="portfolio-card article-card">
+          <div class="card-image article-preview">Ideas</div>
+          <div class="article-tag">Growth</div>
+          <div class="card-title">Why Small Projects Matter</div>
+          <div class="card-text">Even simple projects teach real engineering habits, from debugging and design to iteration and communication.</div>
+          <div class="article-meta">3 min read</div>
+        </article>
       </div>
     </div>
 
-    <div class="portfolio-section" id="certificates">
+    <div class="portfolio-section certificate-section" id="certificates">
       <div class="section-heading">Certificates</div>
       <div class="portfolio-grid">
         <input class="card-toggle" type="radio" name="portfolio-card" id="certificate-one">
@@ -95,6 +104,30 @@
         <label class="portfolio-card" for="certificate-three">
           <div class="card-image"></div>
           <div class="card-title">Certificate Name</div>
+          <div class="card-text"></div>
+        </label>
+      </div>
+    </div>
+
+    <div class="portfolio-section project-section" id="projects">
+      <div class="section-heading">Projects</div>
+      <div class="portfolio-grid">
+        <input class="card-toggle" type="radio" name="portfolio-card" id="project-one">
+        <label class="portfolio-card" for="project-one">
+          <div class="card-image"></div>
+          <div class="card-title">Project Name</div>
+          <div class="card-text"></div>
+        </label>
+        <input class="card-toggle" type="radio" name="portfolio-card" id="project-two">
+        <label class="portfolio-card" for="project-two">
+          <div class="card-image"></div>
+          <div class="card-title">Project Name</div>
+          <div class="card-text"></div>
+        </label>
+        <input class="card-toggle" type="radio" name="portfolio-card" id="project-three">
+        <label class="portfolio-card" for="project-three">
+          <div class="card-image"></div>
+          <div class="card-title">Project Name</div>
           <div class="card-text"></div>
         </label>
       </div>
