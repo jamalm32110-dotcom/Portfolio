@@ -360,6 +360,13 @@ body {
   letter-spacing: 0.12em;
   text-transform: uppercase;
   background: rgba(216, 93, 98, 0.08);
+  text-decoration: none;
+}
+
+.article-pdf-preview {
+  min-height: 200px;
+  border: 2px solid #d85d62;
+  background: linear-gradient(135deg, rgba(216, 93, 98, 0.12), rgba(255, 245, 214, 0.9));
 }
 
 .article-meta {
